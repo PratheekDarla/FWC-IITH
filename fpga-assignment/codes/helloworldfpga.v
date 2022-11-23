@@ -1,4 +1,4 @@
-module helloworldfpga(
+module pratheek(
 
 	input wire A,
 	input wire B,
