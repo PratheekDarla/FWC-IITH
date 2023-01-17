@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{amssymb,amsfonts,amsthm,amsmath}
+\usepackage{enumitem}
+\usepackage{hyperref,xcolor}
+\hypersetup{
+    colorlinks,
+    urlcolor={black}	%black!50!blue
+}
+
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+%\newcommand{\varsol}{\noindent \textbf{Aliter: }}
+%\newcommand*{\permcomb}[4][0mu]{{{}^{#3}\mkern#1#2_{#4}}}
+%\newcommand*{\perm}[1][-3mu]{\permcomb[#1]{P}}
+%\newcommand*{\comb}[1][-1mu]{\permcomb[#1]{C}}
+\setlist[enumerate]{font=\small\bfseries}
+\renewcommand\thefootnote{\textcolor{black}{\arabic{footnote}}}
+
+\begin{document}
+
+\title{NCERT: Class XI}
+\author{\Large Pratheek Darla - FWC22091}
+\date{}
+
+\maketitle
+
+\begin{enumerate}[label=16.\arabic{enumi}.\arabic{enumii}]%,ref=\thesection.\theenumi.\theenumi]
+\numberwithin{equation}{enumi}
+\setcounter{enumi}{3}
+\setcounter{enumii}{7}
+
+\item \footnote{Read question numbers as (CHAPTER NUMBER).(EXERCISE NUMBER).(QUESTION NUMBER)} A and B are two events such that $\pr A=0.54, \pr B=0.69$ and  $\pr {\text{AB}} = 0.35$. Find\\[1ex]
+\begin{enumerate}
+\item $\pr{\text{A + B}}$ \\
+\item $\pr{\text{A'B'}}$ \\
+\item $\pr{\text{AB'}}$ \\
+\item $\pr{\text{A'B}}$ \\[1ex]
+\end{enumerate}
+
+\solution 
+\begin{enumerate}
+\item By addition theorem of probability, we know that\\
+\begin{align}
+\pr{\text{A + B}} &= \pr A + \pr B - \pr {AB} \\
+&= 0.54 + 0.69 - 0.35 \\
+&= 0.88    
+\end{align}
+
+\item
+\begin{align}
+\pr{\text{A'B'}} &= 1 - \pr{\text{A + B}} \\
+ &= 1 - 0.88 \label{eq-5}  \\
+ &= 0.12
+\end{align}
+
+\item
+\begin{align}
+\pr{\text{AB'}} &= \pr A - \pr {AB} \\
+ &= 0.54 - 0.35  \\
+ &= 0.19 
+\end{align}
+
+\item Similarly, 
+\begin{align}
+\pr{\text{A'B}} &= \pr B - \pr {AB} \\
+&= 0.69 - 0.35 \\
+&= 0.34
+\end{align}
+\end{enumerate}      
+
+\end{enumerate}
+\end{document}
