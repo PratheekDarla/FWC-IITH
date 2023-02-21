@@ -135,7 +135,7 @@ plt.plot(x_circ[0,:],x_circ[1,:],label='$Circle$')
 #Labeling the coordinates
 tri_coords = np.vstack((h.T,q11.T,q12.T,q21.T,q22.T,center)).T
 plt.scatter(tri_coords[0,:], tri_coords[1,:])
-vert_labels = ['P','C','A','B','D','O']
+vert_labels = ['vec{P}_1','C','A','B','D','O']
 for i, txt in enumerate(vert_labels):
     plt.annotate(txt, # this is the text
                  (tri_coords[0,i], tri_coords[1,i]), # this is the point to label
