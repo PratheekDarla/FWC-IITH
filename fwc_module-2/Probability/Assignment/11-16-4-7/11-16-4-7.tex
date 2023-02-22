@@ -31,17 +31,18 @@
 \setcounter{enumi}{3}
 \setcounter{enumii}{7}
 
-\item \footnote{Read question numbers as (CHAPTER NUMBER).(EXERCISE NUMBER).(QUESTION NUMBER)} A and B are two events such that $\pr A=0.54, \pr B=0.69$ and  $\pr {\text{AB}} = 0.35$. Find\\[1ex]
+\item \footnote{Read question numbers as (CHAPTER NUMBER).(EXERCISE NUMBER).(QUESTION NUMBER)} A and B are two events such that $\pr A=0.54, \pr B=0.69$ and  $\pr{\text{AB}} = 0.35$. Find\\[1ex]
+
 \begin{enumerate}
-\item $\pr{\text{A + B}}$ \\
-\item $\pr{\text{A'B'}}$ \\
-\item $\pr{\text{AB'}}$ \\
-\item $\pr{\text{A'B}}$ \\[1ex]
+\item $\pr{\text{A + B}} $ 
+\item $\pr{A^{\prime} B^{\prime}} $ 
+\item $\pr{A B^{\prime}} $ 
+\item $\pr{A^{\prime} B} $  
 \end{enumerate}
 
 \solution 
 \begin{enumerate}
-\item By addition theorem of probability, we know that\\
+\item By addition theorem of probability, we know that
 \begin{align}
 \pr{\text{A + B}} &= \pr A + \pr B - \pr {AB} \\
 &= 0.54 + 0.69 - 0.35 \\
@@ -50,21 +51,28 @@
 
 \item
 \begin{align}
-\pr{\text{A'B'}} &= 1 - \pr{\text{A + B}} \\
- &= 1 - 0.88 \label{eq-5}  \\
+\pr{A^{\prime} B^{\prime}} &= \pr{(1 - A)(1 - B)} \\
+ &= \pr{(1 - A - B + AB}  \\
+ &= \pr{(1 - (A + B - AB)}  \\
+ &= 1 - \pr{\text{(A + B)}} \\
+ &= 1 - 0.88  \\
  &= 0.12
 \end{align}
 
 \item
 \begin{align}
-\pr{\text{AB'}} &= \pr A - \pr {AB} \\
+\pr{AB^{\prime}} &= \pr{(A)(1 - B)} \\
+ &= \pr{A - AB} \\
+ &= \pr A - \pr {AB} \\
  &= 0.54 - 0.35  \\
  &= 0.19 
 \end{align}
 
 \item Similarly, 
 \begin{align}
-\pr{\text{A'B}} &= \pr B - \pr {AB} \\
+\pr{A^{\prime} B} &= \pr{(1 - A)(B)}  \\
+&= \pr{B - AB} \\
+&= \pr B - \pr {AB} \\
 &= 0.69 - 0.35 \\
 &= 0.34
 \end{align}
